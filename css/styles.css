@@ -14,6 +14,7 @@
   --adress-text-color: #ffffff;
   --filter-background-color: #f5f4fa;
   --filter-btn-text-color: #ffffff;
+  --team-icons-color: #afb1b8;
 }
 
 html {
@@ -163,6 +164,8 @@ img {
 }
 
 .contacts-link {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -173,6 +176,15 @@ img {
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--accent-color);
+}
+
+.contacts-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contacts-icon:hover {
+  fill: var(--accent-color);
 }
 
 .current {
@@ -266,6 +278,16 @@ img {
   flex-wrap: wrap;
 }
 
+.features-item-icon {
+  width: 270px;
+  height: 120px;
+  background: var(--lightgrey-background-color);
+  border-radius: 4px;
+}
+
+.features-icon {
+  margin: 25px 100px;
+}
 /*-------WORKS------*/
 
 .works-section {
@@ -344,6 +366,35 @@ img {
   color: var(--secondary-text-color);
 }
 
+.team-social-list {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+  justify-content: center;
+}
+
+.team-item-social-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--team-icons-color);
+}
+
+.team-item-social-link:hover {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+
+.team-item-social-icon {
+  fill: currentColor;
+}
+
+.team-item-social + .team-item-social {
+  margin-left: 10px;
+}
 /*-------CLIENTS--------*/
 
 .clients-section {
@@ -408,6 +459,38 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--adress-text-color);
+}
+
+.footer-social-list {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--light-text-logo);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-link:hover {
+  color: var(--light-text-logo);
+  background-color: var(--accent-color);
+}
+
+.footer-social-icon {
+  fill: currentColor;
+}
+
+.footer-social-item + .footer-social-item {
+  margin-left: 10px;
 }
 
 /*------PORTFOLIO-------*/
