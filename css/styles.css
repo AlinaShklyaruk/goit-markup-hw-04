@@ -257,6 +257,7 @@ img {
 }
 
 .features-item-title {
+  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -415,6 +416,35 @@ img {
   display: flex;
 }
 
+.clients-link {
+  color: var(--team-icons-color);
+}
+
+.clients-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-item + .clients-item {
+  margin-left: 30px;
+}
+
+.clients-item-icon {
+  fill: currentColor;
+}
+
+.clients-item:hover {
+  border-color: var(--accent-color);
+}
+
+.clients-item-icon:hover {
+  fill: var(--accent-color);
+}
 /*-------FOOTER-----*/
 
 .footer {
@@ -516,6 +546,8 @@ img {
 
 .portfolio-filter-btn:hover,
 .portfolio-filter-btn:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   color: var(--filter-btn-text-color);
   background: var(--accent-color);
 }
@@ -541,6 +573,12 @@ img {
   margin-bottom: 30px;
 
   background: #ffffff;
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-item-link {
