@@ -184,7 +184,23 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background-color: var(--footer-background-color);
+  border-color: var(--footer-background-color);
+}
+
+.hero-overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero-image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -328,12 +344,37 @@ img {
   color: var(--secondary-text-color);
 }
 
+/*-------CLIENTS--------*/
+
+.clients-section {
+  padding-top: 94px;
+}
+
+.clients-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+.clients-list {
+  display: flex;
+}
+
 /*-------FOOTER-----*/
 
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--footer-background-color);
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
 }
 
 .address {
@@ -353,6 +394,19 @@ img {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
+  color: var(--adress-text-color);
+}
+
+.join-us {
+  margin-left: 70px;
+}
+
+.join-us-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: var(--adress-text-color);
 }
 
